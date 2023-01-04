@@ -1,8 +1,8 @@
 const express = require('express');
 const path = require('path');
 const { clog } = require('./middleware/helpers');
-const html = require('./routes/htmlRoute');
-const api = require('./routes/apiRoute');
+const htmlRouter = require('./routes/htmlRoute');
+const apiRouter = require('./routes/apiRoute');
 
 // Creating environment variable port
 const PORT = process.env.PORT || 3001;
@@ -20,9 +20,9 @@ app.use(express.urlencoded({ extended: true }));
 // Get express to create route for all the files in the 'public' folder
 app.use(express.static('public'));
 // Api routes
-app.use('/api', api);
+app.use('/api', apiRouter);
 // Home page routes
-app.use('/', html);
+app.use('/', htmlRouter);
 
 // Start the server
 app.listen(PORT, () => {

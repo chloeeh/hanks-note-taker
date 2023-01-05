@@ -46,6 +46,7 @@ Resources used:
 2) Bootcamp 11-Express, mini-project (28)
 3) [Express JS Crash Course](https://www.youtube.com/watch?v=L72fhGm1tfE)
 4) [How to Deploy NodeJS (Express) Apps to Heroku](https://www.youtube.com/watch?v=27GoRa4d15c)
+5) [Deploy with Heroku](https://www.freecodecamp.org/news/how-to-deploy-your-site-using-express-and-heroku/)
 
 
 

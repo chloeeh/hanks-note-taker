@@ -1,9 +1,9 @@
 {
   "name": "hanks-note-taker",
-  "description": "",
+  "description": "## Description",
   "version": "1.0.0",
   "engines": {
-    "node": "18.12.2",
+    "node": "18.12.1",
     "npm": "8.19.2"
   },
   "main": "server.js",
@@ -25,5 +25,6 @@
   "dependencies": {
     "express": "^4.18.2",
     "uuid": "^8.3.2"
-  }
+  },
+  "devDependencies": {}
 }

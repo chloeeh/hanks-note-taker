@@ -20,13 +20,13 @@ The 3rd image shows a list of created notes in the sidebar
 
 The 4th image shows the same list of created notes as in image 3, but with one note deleted to prove the deleted functionality
 
-![Shows home page from localhost ](./Develop/assets/homepage.png)
+![Shows home page from localhost ](./assets/homepage.png)
 
-![Shows page where user can enter notes](./Develop/assets/createNote.png)
+![Shows page where user can enter notes](./assets/createNote.png)
 
-![Shows list of created notes](./Develop/assets/ListOfNotes.png)
+![Shows list of created notes](./assets/ListOfNotes.png)
 
-![Shows list of created notes with one of the previous notes deleted](./Develop/assets/DeletedNote.png)
+![Shows list of created notes with one of the previous notes deleted](./assets/DeletedNote.png)
 
 
 

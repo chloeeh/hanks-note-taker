@@ -1,15 +1,20 @@
 // Import modules and data
 const fs = require('fs');
+// use the uuid module to designate a unique id for the notes
 const { v4: uuidv4 } = require('uuid');
+// use the db.json to store, modify, delete notes
 const notes = require('../db/db.json');
 
-// Custom middleware that adds a note to the db
+// Custom middleware that adds a note to the db.json file
 const createNote = (note) => {
-    // Create a unique id for the note
+    // Create a unique id for the note using the uuid module
     note.id = uuidv4();
-    // if there's no notes create a new array of notes otherwise use the notes data
+    // if there are no notes stored, then create a new array of 
+    // notes otherwise use the notes data from db.json
     const newNoteArr = notes || [];
+    // push the new note to the note array
     newNoteArr.push(note);
+    // write the new note information to the db.json
     fs.writeFile('./db/db.json', JSON.stringify(newNoteArr), (err) => {
         if (err) throw err;
     });
@@ -49,4 +54,6 @@ const clog = (req, res, next) => {
 
     next();
 };
+
+// make this file a module to call elsewhere (i.e. server.js)
 module.exports = { createNote, deleteNote, clog };

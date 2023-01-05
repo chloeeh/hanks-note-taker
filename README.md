@@ -35,7 +35,8 @@ The 4th image shows the same list of created notes as in image 3, but with one n
 N/A
 
 ## Usage
-
+Look. I don't know what I did. But I was at my wit's end and redid everything, like, 3924873958723940 times and it worked. So 
+here's the [deployed Heroku web app](https://hanks-notes.herokuapp.com/)
 
 
 
